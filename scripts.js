@@ -13,3 +13,26 @@ var locations = [
   "Pantry",
   "Basement",
 ];
+//array of objects
+var objects = [
+  "Icepick",
+  "cat",
+  "tuna fish",
+  "belt sander",
+  "industrial floor polisher",
+  "gun",
+  "knife",
+  "poison",
+  "banana",
+  "sword fish",
+  "cheese wheel",
+  "chandelier",
+  "cork screw",
+  "pencil",
+  "pencil",
+  "tea cup",
+  "pudding",
+  "rope",
+  "potato pealer",
+  "french horn",
+];
