@@ -64,7 +64,7 @@ body.onload = function () {
         [i].addEventListener("click", function () {
           //alert with text using friends/locations/objects array indexed with i modulus length of array
           alert(
-            `it was ${friends[i % friends.length]}, in the ${
+            `It was ${friends[i % friends.length]}, in the ${
               locations[i % locations.length]
             }, with the ${objects[i % objects.length]}!`
           );
