@@ -38,18 +38,20 @@ var objects = [
 ];
 //number tracker for h3
 var h3Num = 1;
-//i is 0, while i is less than 100, add 1 to i
-for (i = 0; i < 100; i++) {
-  //create variable for h3
-  var h3 = document.createElement("h3");
-  //create text node for h3
-  var h3Text = document.createTextNode(`Accusation ${h3Num}`);
-  //insert text into h3
-  h3.appendChild(h3Text);
-  //grab body
-  var body = document.body;
-  //insert h3 into body
-  body.appendChild(h3);
-  //add 1 to h3Num
-  h3Num++;
-}
+//grab body
+var body = document.body;
+body.onload = function () {
+  //i is 0, while i is less than 100, add 1 to i
+  for (i = 0; i < 100; i++) {
+    //create variable for h3
+    var h3 = document.createElement("h3");
+    //create text node for h3
+    var h3Text = document.createTextNode(`Accusation ${h3Num}`);
+    //insert text into h3
+    h3.appendChild(h3Text);
+    //insert h3 into body
+    body.appendChild(h3);
+    //add 1 to h3Num
+    h3Num++;
+  }
+};
