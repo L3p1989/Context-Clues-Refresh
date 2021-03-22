@@ -29,7 +29,7 @@ var objects = [
   "chandelier",
   "cork screw",
   "pencil",
-  "pencil",
+  "bottle",
   "tea cup",
   "pudding",
   "rope",
