@@ -40,6 +40,7 @@ var objects = [
 var h3Num = 1;
 //grab body
 var body = document.body;
+//when body loads run function
 body.onload = function () {
   //i is 0, while i is less than 100, add 1 to i
   for (i = 0; i < 100; i++) {
@@ -53,5 +54,21 @@ body.onload = function () {
     body.appendChild(h3);
     //add 1 to h3Num
     h3Num++;
+    //call addClick with i
+    addClick(i);
+    //create function addClick
+    function addClick(i) {
+      //get element h3 referenced by i and add click event listener
+      return document
+        .getElementsByTagName("h3")
+        [i].addEventListener("click", function () {
+          //alert with text using friends/locations/objects array indexed with i modulus length of array
+          alert(
+            `it was ${friends[i % friends.length]}, in the ${
+              locations[i % locations.length]
+            }, with the ${objects[i % objects.length]}!`
+          );
+        });
+    }
   }
 };
